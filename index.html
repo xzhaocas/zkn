@@ -1,3 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>赵和宁一家人</h1>
+
+<p>愿得一心人，白手不相离</p>
+
+<p id="demo"></p>
+
+<script>
+ window.onload=function(){
+        //每1秒刷新时间
+        setInterval("f()",1);
+    }
+
+   function f() {
+
+var s1='2020-11-04';
+
+a1 = new Date(s1.replace(/-/g, "/"));???
+a2 = new Date();//获取当前日期
+var day = a2.getTime() - a1.getTime()-19*1000*60*60;
+var time = parseInt(day / (1000 * 60 * 60 * 24));
+var hour = parseInt(day / (1000 * 60 * 60 )) - time * 24;
+var minutes = parseInt(day / (1000 * 60  )) - ( time*24 + hour)  * 60 ;
+var seconds = parseInt(day / (1000  ) - (time * 24 * 60 + hour * 60 + minutes)*  60);
+var miniseconds = parseInt((day - (time * 24*60* 60 + hour * 60 * 60 + minutes * 60+seconds )*1000)/100);
+
+document.getElementById("demo").innerHTML =
+"幸福开始的第" + time + "天" + hour + "小时" + minutes +"分"+seconds +"."+miniseconds+"秒";
+}
+</script>
+　　<pid="Layer1"style="position:absolute;left:0px;top:0px;width:100%;height:100%">
+　　<img src="1.jpg"width="100%"height="100%"/>
+　　<img src="pics/15.jpg"width="100%"height="100%"/>
+ 　　<img src="pics/mmexport1617461308712.jpg"width="100%"height="100%"/>
+
+　　</p>
+</body>
+</html>
+
+
+
+
 ## Welcome to GitHub Pages 朱凯宁的主页
 
 You can use the [editor on GitHub](https://github.com/xzhaocas/zkn/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
